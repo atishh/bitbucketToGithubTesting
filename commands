@@ -56,3 +56,5 @@ fi
 
 git push --force --tags origin HEAD:master
 
+//To delete filename commands2 from history
+git filter-branch --force --index-filter   'git rm --cached --ignore-unmatch commands2'   --prune-empty --tag-name-filter cat -- --all
