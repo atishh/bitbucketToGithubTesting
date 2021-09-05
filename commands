@@ -1,0 +1,37 @@
+//git commands to merge from bitbucket to local, when there is some change in local
+//These commands will not overwrite the local changes.
+
+git stash
+git pull -u origin master
+git stash pop
+
+//Commands to create branch
+git branch
+git branch Jun14
+git checkout Jun14
+git push origin Jun14
+git checkout master
+
+//Commands when setting up git for first time
+   38  git init
+   39  ls *.php *.css
+   40  git add *.php *.css
+   41  git diff
+   42  ls
+   43  git commit -m "Initial commit"
+   44  git config --global --edit
+   45  git config --global --edit
+   46  ls
+   47  pwd
+   48  git remote add origin https://camlin@bitbucket.org/camlin/lnsite.git
+   49  git remote -v
+   50  ls
+   51  git push origin master
+   62  git config --global user.name "atish"
+   63  git config --global user.email 7705506+atishh@users.noreply.github.com
+   64  vi ~/.gitconfig
+   89  vi style.css
+   90  git add style.css
+   91  git commit -m "Adding second comment"
+   92  git push origin master
+
